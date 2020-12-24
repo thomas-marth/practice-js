@@ -6,7 +6,7 @@ const value = prompt('Please enter a number:');
 
 console.log(`${typeof value}: ${value}`);
 
-console.log(`${typeof Number(value)}: ${value}`); // Приведение к числу с помощъю метода Number()
+console.log(`${typeof Number(value)}: ${value}`); // Приведение к числу с помощью метода Number()
 
 /*
  *
