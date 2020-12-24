@@ -230,18 +230,18 @@ const removeCard = function (allCards, cardToRemove) {
   allCards.splice(index, 1);
 };
 
-// removeCard(cards, 'card-32');
-// console.log(cards);
+removeCard(cards, 'card-32');
+console.log(cards);
 
-// removeCard(cards, 'card-5');
-// console.log(cards);
+removeCard(cards, 'card-5');
+console.log(cards);
 
 const addCard = function (allCards, cardToInsert, index) {
   allCards.splice(index, 0, cardToInsert);
 };
 
-// addCard(cards, 'card-100', 2);
-// console.log(cards);
+addCard(cards, 'card-100', 2);
+console.log(cards);
 
 /*
  *
@@ -255,18 +255,20 @@ const addCard = function (allCards, cardToInsert, index) {
  * Псевдомассив arguments и Array.from и ...
  */
 
-const fn = function () {
-  console.log([]);
-  console.log(arguments);
-};
+// const fn = function () {
+//   console.log([]);
+//   console.log(arguments);
+// };
 
-fn(1, 2, 3, 4, 5, 6, 7);
+// fn(1, 2, 3, 4, 5, 6, 7);
 
 /*
  * Функция сложения произвольного количества элементов
  */
 
-// const add = function() {
+// преобразование псевдомассива с помощью метода Array.from
+
+// const add = function () {
 //   const args = Array.from(arguments);
 //   console.log(arguments);
 //   console.log(args);
@@ -275,6 +277,16 @@ fn(1, 2, 3, 4, 5, 6, 7);
 //     console.log(args[i]);
 //   }
 // };
+
+// console.log(add(1, 2, 3));
+
+// console.log(add(1, 2, 4, 5, 6));
+
+/*
+ *
+ */
+
+// преобразование псевдомассива в массив с помощью операции (...rest)
 
 const add = function (...args) {
   console.log(args);
